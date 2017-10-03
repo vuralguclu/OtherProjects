@@ -1,0 +1,10 @@
+D:\OtherProjects\CopyPDF\CopyPDF\bin\Debug\CopyPDF.exe.config
+D:\OtherProjects\CopyPDF\CopyPDF\bin\Debug\CopyPDF.exe
+D:\OtherProjects\CopyPDF\CopyPDF\bin\Debug\CopyPDF.pdb
+D:\OtherProjects\CopyPDF\CopyPDF\obj\x86\Debug\CopyPDF.exe
+D:\OtherProjects\CopyPDF\CopyPDF\obj\x86\Debug\CopyPDF.pdb
+C:\D\OtherProjects\CopyPDF\CopyPDF\bin\Debug\CopyPDF.exe.config
+C:\D\OtherProjects\CopyPDF\CopyPDF\obj\x86\Debug\CopyPDF.exe
+C:\D\OtherProjects\CopyPDF\CopyPDF\obj\x86\Debug\CopyPDF.pdb
+C:\D\OtherProjects\CopyPDF\CopyPDF\bin\Debug\CopyPDF.exe
+C:\D\OtherProjects\CopyPDF\CopyPDF\bin\Debug\CopyPDF.pdb

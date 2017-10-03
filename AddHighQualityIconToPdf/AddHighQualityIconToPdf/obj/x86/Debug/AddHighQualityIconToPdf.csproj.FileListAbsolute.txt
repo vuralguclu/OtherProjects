@@ -1,0 +1,7 @@
+C:\OtherProjects\AddHighQualityIconToPdf\AddHighQualityIconToPdf\bin\Debug\AddHighQualityIconToPdf.exe
+C:\OtherProjects\AddHighQualityIconToPdf\AddHighQualityIconToPdf\bin\Debug\AddHighQualityIconToPdf.pdb
+C:\OtherProjects\AddHighQualityIconToPdf\AddHighQualityIconToPdf\bin\Debug\itextsharp.dll
+C:\OtherProjects\AddHighQualityIconToPdf\AddHighQualityIconToPdf\bin\Debug\mytextsharp.dll
+C:\OtherProjects\AddHighQualityIconToPdf\AddHighQualityIconToPdf\obj\x86\Debug\AddHighQualityIconToPdf.csprojResolveAssemblyReference.cache
+C:\OtherProjects\AddHighQualityIconToPdf\AddHighQualityIconToPdf\obj\x86\Debug\AddHighQualityIconToPdf.exe
+C:\OtherProjects\AddHighQualityIconToPdf\AddHighQualityIconToPdf\obj\x86\Debug\AddHighQualityIconToPdf.pdb

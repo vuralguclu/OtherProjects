@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="UploadFile">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="uploadParameters" type="tns:UploadParameters" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="UploadParameters">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="RFxId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DocumentName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DocumentDescription" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DocumentFile" type="s:base64Binary" />
+          <s:element minOccurs="1" maxOccurs="1" name="UploadDateTime" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="UploadingUserId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ProcessName" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="UploadFileResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UploadFileResult" type="tns:UploadOperationResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="UploadOperationResult">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Status" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ReferenceId" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="DownloadFile">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="downloadParameters" type="tns:DownloadParameters" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="DownloadParameters">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="ReferenceId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Id" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="DownloadFileResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DownloadFileResult" type="tns:DownloadOperationResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="DownloadOperationResult">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Status" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DocumentSize" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DocumentFile" type="s:base64Binary" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ConvertToPdf">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="toPdfParameters" type="tns:ToPdfParameters" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ToPdfParameters">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="DocumentFile" type="s:base64Binary" />
+          <s:element minOccurs="0" maxOccurs="1" name="DocumentName" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ConvertToPdfResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ConvertToPdfResult" type="tns:ToPdfOperationResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ToPdfOperationResult">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Status" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DocumentSize" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DocumentFile" type="s:base64Binary" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="UpdateDocument">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="updateDocParameters" type="tns:UpdateDocumentParameters" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="UpdateDocumentParameters">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="ReferenceId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="NewDocumentName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="NewDocumentFile" type="s:base64Binary" />
+          <s:element minOccurs="0" maxOccurs="1" name="UpdatingUserId" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="UpdateDocumentResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UpdateDocumentResult" type="tns:UpdateDocumentOperationResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="UpdateDocumentOperationResult">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Status" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="PdfUpdate">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="updateDocParameters" type="tns:PdfUpdateParameters" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="PdfUpdateParameters">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="PDFContent" type="s:base64Binary" />
+          <s:element minOccurs="0" maxOccurs="1" name="PDFName" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="ToAllPages" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="PageNumbers" type="tns:ArrayOfInt" />
+          <s:element minOccurs="0" maxOccurs="1" name="Info" type="tns:InfoToBePrinted" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfInt">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="int" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="InfoToBePrinted">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="ConfirmationInfo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FontName" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="FontSize" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="HTMLColor" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="PDF_X" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="PDF_Y" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="TextWidth" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="PdfUpdateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PdfUpdateResult" type="tns:PdfUpdateOperationResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="PdfUpdateOperationResult">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Status" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="NewDocumentSize" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="NewDocumentFile" type="s:base64Binary" />
+        </s:sequence>
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="UploadFileSoapIn">
+    <wsdl:part name="parameters" element="tns:UploadFile" />
+  </wsdl:message>
+  <wsdl:message name="UploadFileSoapOut">
+    <wsdl:part name="parameters" element="tns:UploadFileResponse" />
+  </wsdl:message>
+  <wsdl:message name="DownloadFileSoapIn">
+    <wsdl:part name="parameters" element="tns:DownloadFile" />
+  </wsdl:message>
+  <wsdl:message name="DownloadFileSoapOut">
+    <wsdl:part name="parameters" element="tns:DownloadFileResponse" />
+  </wsdl:message>
+  <wsdl:message name="ConvertToPdfSoapIn">
+    <wsdl:part name="parameters" element="tns:ConvertToPdf" />
+  </wsdl:message>
+  <wsdl:message name="ConvertToPdfSoapOut">
+    <wsdl:part name="parameters" element="tns:ConvertToPdfResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateDocumentSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateDocument" />
+  </wsdl:message>
+  <wsdl:message name="UpdateDocumentSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateDocumentResponse" />
+  </wsdl:message>
+  <wsdl:message name="PdfUpdateSoapIn">
+    <wsdl:part name="parameters" element="tns:PdfUpdate" />
+  </wsdl:message>
+  <wsdl:message name="PdfUpdateSoapOut">
+    <wsdl:part name="parameters" element="tns:PdfUpdateResponse" />
+  </wsdl:message>
+  <wsdl:portType name="FileManagerServiceSoap">
+    <wsdl:operation name="UploadFile">
+      <wsdl:input message="tns:UploadFileSoapIn" />
+      <wsdl:output message="tns:UploadFileSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DownloadFile">
+      <wsdl:input message="tns:DownloadFileSoapIn" />
+      <wsdl:output message="tns:DownloadFileSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConvertToPdf">
+      <wsdl:input message="tns:ConvertToPdfSoapIn" />
+      <wsdl:output message="tns:ConvertToPdfSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateDocument">
+      <wsdl:input message="tns:UpdateDocumentSoapIn" />
+      <wsdl:output message="tns:UpdateDocumentSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PdfUpdate">
+      <wsdl:input message="tns:PdfUpdateSoapIn" />
+      <wsdl:output message="tns:PdfUpdateSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="FileManagerServiceSoap" type="tns:FileManagerServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="UploadFile">
+      <soap:operation soapAction="http://tempuri.org/UploadFile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DownloadFile">
+      <soap:operation soapAction="http://tempuri.org/DownloadFile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConvertToPdf">
+      <soap:operation soapAction="http://tempuri.org/ConvertToPdf" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateDocument">
+      <soap:operation soapAction="http://tempuri.org/UpdateDocument" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PdfUpdate">
+      <soap:operation soapAction="http://tempuri.org/PdfUpdate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="FileManagerServiceSoap12" type="tns:FileManagerServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="UploadFile">
+      <soap12:operation soapAction="http://tempuri.org/UploadFile" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DownloadFile">
+      <soap12:operation soapAction="http://tempuri.org/DownloadFile" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConvertToPdf">
+      <soap12:operation soapAction="http://tempuri.org/ConvertToPdf" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateDocument">
+      <soap12:operation soapAction="http://tempuri.org/UpdateDocument" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PdfUpdate">
+      <soap12:operation soapAction="http://tempuri.org/PdfUpdate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="FileManagerService">
+    <wsdl:port name="FileManagerServiceSoap" binding="tns:FileManagerServiceSoap">
+      <soap:address location="http://10.6.142.162/FileManagerWebSite/Services/FileManagerService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="FileManagerServiceSoap12" binding="tns:FileManagerServiceSoap12">
+      <soap12:address location="http://10.6.142.162/FileManagerWebSite/Services/FileManagerService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

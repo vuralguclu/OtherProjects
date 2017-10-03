@@ -1,0 +1,22 @@
+c:\users\fergun\documents\visual studio 2010\Projects\ItextSharpIkonTest\ItextSharpIkonTest\bin\Debug\ItextSharpIkonTest.exe
+c:\users\fergun\documents\visual studio 2010\Projects\ItextSharpIkonTest\ItextSharpIkonTest\bin\Debug\ItextSharpIkonTest.pdb
+c:\users\fergun\documents\visual studio 2010\Projects\ItextSharpIkonTest\ItextSharpIkonTest\bin\Debug\itextsharp.dll
+c:\users\fergun\documents\visual studio 2010\Projects\ItextSharpIkonTest\ItextSharpIkonTest\bin\Debug\mytextsharp.dll
+c:\users\fergun\documents\visual studio 2010\Projects\ItextSharpIkonTest\ItextSharpIkonTest\obj\x86\Debug\ItextSharpIkonTest.csprojResolveAssemblyReference.cache
+c:\users\fergun\documents\visual studio 2010\Projects\ItextSharpIkonTest\ItextSharpIkonTest\obj\x86\Debug\ItextSharpIkonTest.exe
+c:\users\fergun\documents\visual studio 2010\Projects\ItextSharpIkonTest\ItextSharpIkonTest\obj\x86\Debug\ItextSharpIkonTest.pdb
+D:\OtherProjects\ItextSharpIkonTest\ItextSharpIkonTest\obj\x86\Debug\ItextSharpIkonTest.exe
+D:\OtherProjects\ItextSharpIkonTest\ItextSharpIkonTest\obj\x86\Debug\ItextSharpIkonTest.pdb
+D:\OtherProjects\ItextSharpIkonTest\ItextSharpIkonTest\bin\Debug\ItextSharpIkonTest.exe
+D:\OtherProjects\ItextSharpIkonTest\ItextSharpIkonTest\bin\Debug\ItextSharpIkonTest.pdb
+D:\OtherProjects\ItextSharpIkonTest\ItextSharpIkonTest\bin\Debug\itextsharp.dll
+D:\OtherProjects\ItextSharpIkonTest\ItextSharpIkonTest\bin\Debug\mytextsharp.dll
+D:\OtherProjects\ItextSharpIkonTest\ItextSharpIkonTest\obj\x86\Debug\ItextSharpIkonTest.csprojResolveAssemblyReference.cache
+C:\D\OtherProjects\ItextSharpIkonTest\ItextSharpIkonTest\obj\x86\Debug\ItextSharpIkonTest.exe
+C:\D\OtherProjects\ItextSharpIkonTest\ItextSharpIkonTest\obj\x86\Debug\ItextSharpIkonTest.pdb
+C:\D\OtherProjects\ItextSharpIkonTest\ItextSharpIkonTest\bin\Debug\ItextSharpIkonTest.exe
+C:\D\OtherProjects\ItextSharpIkonTest\ItextSharpIkonTest\bin\Debug\ItextSharpIkonTest.pdb
+C:\D\OtherProjects\ItextSharpIkonTest\ItextSharpIkonTest\bin\Debug\itextsharp.dll
+C:\D\OtherProjects\ItextSharpIkonTest\ItextSharpIkonTest\bin\Debug\mytextsharp.dll
+C:\D\OtherProjects\ItextSharpIkonTest\ItextSharpIkonTest\obj\x86\Debug\ItextSharpIkonTest.csprojResolveAssemblyReference.cache
+C:\D\OtherProjects\ItextSharpIkonTest\ItextSharpIkonTest\bin\Debug\ItextSharpIkonTest.exe.config

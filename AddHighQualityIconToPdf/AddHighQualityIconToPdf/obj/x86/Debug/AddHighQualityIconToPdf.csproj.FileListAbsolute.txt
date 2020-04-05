@@ -5,3 +5,5 @@ C:\OtherProjects\AddHighQualityIconToPdf\AddHighQualityIconToPdf\bin\Debug\mytex
 C:\OtherProjects\AddHighQualityIconToPdf\AddHighQualityIconToPdf\obj\x86\Debug\AddHighQualityIconToPdf.csprojResolveAssemblyReference.cache
 C:\OtherProjects\AddHighQualityIconToPdf\AddHighQualityIconToPdf\obj\x86\Debug\AddHighQualityIconToPdf.exe
 C:\OtherProjects\AddHighQualityIconToPdf\AddHighQualityIconToPdf\obj\x86\Debug\AddHighQualityIconToPdf.pdb
+C:\GitHub\PersonelProjects\AddHighQualityIconToPdf\AddHighQualityIconToPdf\obj\x86\Debug\AddHighQualityIconToPdf.exe
+C:\GitHub\PersonelProjects\AddHighQualityIconToPdf\AddHighQualityIconToPdf\obj\x86\Debug\AddHighQualityIconToPdf.pdb
